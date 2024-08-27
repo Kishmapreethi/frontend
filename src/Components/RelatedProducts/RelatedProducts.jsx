@@ -7,9 +7,7 @@ import Items from '../Items/Items';
 
 const RelatedProducts = (props) => {
     const {all_product} =  useContext(ShopContext);
-    console.log(props.product.category)
     const related_products = all_product.filter((item)=>item.category === props.product.category)
-    console.log('..',related_products)
   
     return (
     <div className='relatedproducts'>
